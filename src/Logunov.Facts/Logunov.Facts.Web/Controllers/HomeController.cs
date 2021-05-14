@@ -1,4 +1,4 @@
-﻿using Logunov.Facts.Web.Models;
+﻿using Logunov.Facts.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
