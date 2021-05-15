@@ -1,4 +1,5 @@
 using Logunov.Facts.Web.Data;
+using Logunov.Facts.Web.Infrastructure.Mappers.Base;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -34,6 +35,12 @@ namespace Logunov.Facts.Web
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            
+            //MapperRegistration.GetMapperConfiguration();
+
+            services.AddAutoMapper(typeof(Startup).Assembly);
+
             services.AddControllersWithViews();
         }
 

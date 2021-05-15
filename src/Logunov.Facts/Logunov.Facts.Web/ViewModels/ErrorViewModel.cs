@@ -1,6 +1,6 @@
 using System;
 
-namespace Logunov.Facts.Web.Models
+namespace Logunov.Facts.Web.ViewModels
 {
     public class ErrorViewModel
     {
